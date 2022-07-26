@@ -1,1 +1,1 @@
-# LandingPageVital11
+Esta pagina no es responsive
