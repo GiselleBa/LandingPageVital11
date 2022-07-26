@@ -1,0 +1,21 @@
+@font-face { font-family: 'Gotham'; 
+    src: url('../Fonts/GothamBold.ttf');  
+    font-weight: 800;
+    color:rgb(11, 82, 13);
+}
+*{
+    font-family: 'Gotham';
+    font-weight:800;
+    color:rgb(11, 82, 13);
+
+//Titulo H1
+}
+@font-face { font-family: 'Gotham'; 
+    src: url('../Fonts/GothamBold.ttf');  
+    font-weight: 800;
+}
+h1{
+    font-family: 'Gotham';
+    font-weight:400;
+    color:rgb(11, 82, 13);
+}
