@@ -1,0 +1,42 @@
+//BREAKPOINTS
+@function media($name){
+    @return map-get($map: $breakpoints, $key: $name);
+}
+
+$breakpoints: (
+    'desktop': 1440px,
+    'nombre elemento': 1000px,
+    'portatil-pequeño': 1100px,
+    'ipad-grande': 992px,
+    'ipad-pequeña': 768px,
+    'celular': 576px
+);
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    &__item{
+        background-color: rgb(161, 29, 29);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        border: 2px solid blue;
+    }
+}
+
+@media(max-width: 992px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+        &__item{
+            background-color: rgb(62, 49, 133);
+        }
+    }
+}
+
+@media(max-width: media('celular')){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
